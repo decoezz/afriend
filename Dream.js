@@ -4,11 +4,25 @@ console.log("Scrpit By Dream");
 
 
 client.on("ready", () => {
-let channel =     client.channels.get(511615135350128643)
-setInterval(function() {
-channel.send(`a7a`);
-}, 25)
-})
+let channel =     client.channels.get(517968522513743872)
+client.on('message', message => {
+    if (message.content === '!spam') {
+          let count = 0;
+          let ecount = 0;
+          for(let x = 0; x < 90000; x++) {
+            message.channel.send(`credit credit credit credit credit credit credit credit credit credit credit credit credit credit
+credit credit credit credit credit credit credit credit credit credit credit credit credit credit
+credit credit credit credit credit credit credit credit credit credit credit credit credit credit
+credit credit credit credit credit credit credit credit credit credit credit credit credit credit
+credit credit credit credit credit credit credit credit credit credit credit credit credit credit
+credit credit credit credit credit credit credit credit credit credit credit credit credit credit ${x}`)
+              .then(m => {
+                count++;
+              })
+              
+            }
+          }
+    });
  
  
-client.login(NDMwODAyNDA3ODMyODEzNTY4.DstZrg.sL2L2Lh8hoqjjV8ouPhQ_iVo02M);
+client.login(process.env.TOKEN);
